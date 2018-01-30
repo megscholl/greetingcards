@@ -1,0 +1,48 @@
+#container {
+    padding: 1em;
+}
+
+.cardContainers {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    padding: 3em;
+}
+
+.balloons {
+    background-image: url("balloons.jpg");
+    background-repeat: repeat-x;
+    color: white;
+    font-size: 50px;
+}
+
+.valentines {
+    background-image: url("hearts.png");
+    background-position: left;
+    background-repeat: repeat-x;
+    color: white;
+    font-size: 50px;
+}
+
+.wifi {
+    font-size: 12px;
+}
+
+.miss {
+    background-image: url("love.jpg");
+    background-position: left;
+    background-repeat: repeat-x;
+    color: white;
+    font-size: 50px;
+
+}
+
+.grats {
+
+    background-image: url("stars.jpg");
+    background-position: left;
+    background-repeat: repeat-x;
+    color: white;
+    font-size: 50px;
+}

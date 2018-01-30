@@ -22,24 +22,39 @@ const CardMaker = {
           this.frontMsg = CardMaker.makeFrontMessage(frontMsg);
           this.backMsg = CardMaker.makeBackMessage(backMsg);
         }
+
+      
+        const birthdayCard = Object.create(CardMaker);
+        const valentinesCard = Object.create(CardMaker);
+        const missYouCard = Object.create(CardMaker);
+        const congratsCard = Object.create(CardMaker);
+        
+
+        birthdayCard.frontMsg = "<br>Happy Birthday!! <br><br>";
+        birthdayCard.backMsg = "Here's $100,000. Lol, just kidding.";
+        console.log("Birthday Card: " + birthdayCard.frontMsg + " " + birthdayCard.backMsg);
+        let bDayCard = birthdayCard.frontMsg + birthdayCard.backMsg;
   
+        valentinesCard.frontMsg = "all you need is love* <span class='wifi'>*and good wifi</span> <br>";
+        valentinesCard.backMsg = "happy valentine's day";
+        console.log("Valentine's Day Card: " + valentinesCard.frontMsg + " " + valentinesCard.asterisk + " " + valentinesCard.backMsg);
 
-        let bDayCard = new Card('Happy Birthday!!', 'From, yours truly.');
-        console.log("Happy Birthday card messages: ", bDayCard);
+        missYouCard.frontMsg = "I miss you... <br>";
+        missYouCard.backMsg = "but I love not having to shave my legs :)";
+        console.log("I Miss You Card: " + missYouCard.frontMsg + " " + missYouCard.backMsg);
 
-        let vDayCard = new Card("Happy Valentine's Day!!", "I love you, but I hate having to shave my legs all the time.");
-        console.log("Valentine's Day Card Marketing: ", vDayCard);
+        congratsCard.frontMsg = "Congratulations on graduating college! <br><br>";
+        congratsCard.backMsg = "You achieved a piece of paper! <br>Welcome to adulthood :)";
+        console.log("College Graduate Card: " + congratsCard.frontMsg + " " + congratsCard.backMsg);
+       
+        let bdayCard = birthdayCard.frontMsg + birthdayCard.backMsg;
+        let vDayCard = valentinesCard.frontMsg + valentinesCard.backMsg;
+        let missYou = missYouCard.frontMsg + missYouCard.backMsg;
+        let congratdsCard = congratsCard.frontMsg + congratsCard.backMsg;
 
-        let missYouCard = new Card('I miss you!', 'I miss you, but I love not having to shave my legs.');
-        console.log("Show someone how much you really miss them: ", missYouCard);
-
-        let congratsCard = new Card('Congratulations on graduating college!', 'You achieved a piece of paper saying you paid a bunch of money to not get a job! Welcome to adulthood.');
-        console.log("College Graduate accomplishments: ", congratsCard);
-
-
-
-
-
-
+        document.getElementById("bday").innerHTML = bdayCard;
+        document.getElementById("vday").innerHTML = vDayCard;
+        document.getElementById("missyou").innerHTML = missYou;
+        document.getElementById("congrats").innerHTML = congratdsCard;
 
 
